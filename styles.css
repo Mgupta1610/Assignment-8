@@ -1,0 +1,73 @@
+/* styles.css */
+
+table {
+    border-collapse: collapse;
+    width: 70%;
+}
+
+th {
+    background-color: rgb(86, 86, 204);
+    color: white;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid white;
+    width: 25%;
+}
+
+tr:nth-child(even) {
+    background-color: #e0e0ff;
+}
+
+tr:nth-child(odd) {
+    background-color: #c0c0ff;
+}
+
+#errorMessages {
+    color: red;
+}
+
+.form-row {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.form-row label {
+    width: 100px;
+}
+
+.form-row input {
+    flex: 1;
+    border: 1px solid blue;
+    max-width: 150px;
+    padding: 5px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+.error-container {
+    margin-left: 10px;
+    color: red;
+}
+
+#addEmployeeButton {
+    background-color: rgb(86, 86, 204);
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    margin-left: 140px;
+
+}
+
+#addEmployeeButton:hover {
+    background-color: darkblue;
+}

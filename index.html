@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 08</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Employee Management System</h1>
+
+    <h3>Add Employee</h3>
+    <form id="employeeForm">
+        <div class="form-row">
+            <div class="input-container">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Name">
+            </div>
+            <div class="error-container" id="errorName"></div>
+        </div>
+        <div class="form-row">
+            <div class="input-container">
+                <label for="title">Title:</label>
+                <input type="text" id="title" placeholder="Title">
+            </div>
+            <div class="error-container" id="errorTitle"></div>
+        </div>
+        <div class="form-row">
+            <div class="input-container">
+                <label for="extension">Extension:</label>
+                <input type="text" id="extension" placeholder="Extension">
+            </div>
+            <div class="error-container" id="errorExtension"></div>
+        </div>
+        <div id="errorMessages" style="color: red;"></div>
+        <button type="button" id="addEmployeeButton">Add Employee</button>
+    </form>
+    
+    <br>
+    <h3 id="employeeCount">Showing 5 Employees</h3>
+
+    <table id="employeeTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Title</th>
+                <th>Extension</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody> </tbody>
+    </table>
+    <script src="js/employee-management.js"></script>
+</body>
+</html>
